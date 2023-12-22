@@ -1,0 +1,50 @@
+
+Chapter 1
+Chapter 2
+Chapter 3
+Chapter 4
+
+Transition to Java (ConsoleProgram and GraphicsProgram)
+
+Chapter 5
+    JShell
+
+
+    Data and Computers
+        Computer can process many kinds of Data (Image, Audio, Text)
+        Numbers are the simplest kind of data computer 
+ 
+
+    School Arithmetic
+        integers, rational numbers, irrational numbers, complex numbers
+    Computer Arithmetic
+        integers (To note the difference they are finite in size and range)
+        double()
+        Long and float
+    Numbers and Arithmetic Expressions
+
+    School Algebra
+    Variables
+
+    Characters and
+    String
+    Boolean Expressions
+
+    ConsoleProgram
+    Constant
+
+Chapter 6
+    Control Structures
+
+
+Chapter 7
+    Objects and Classes
+    GraphicsProgram
+
+Chapter 8
+    Classes
+    Demistifying Karel, ConsoleProgram, GraphicsProgram
+
+
+
+Transition to Pure Java

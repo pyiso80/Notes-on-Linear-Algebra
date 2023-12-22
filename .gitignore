@@ -1,0 +1,11 @@
+.DS_Store
+out/_minted-Programming_with_Java-from_Beginner_to_Master/
+out/chapters/
+out/*.aux
+out/*.gz
+out/*.log
+!out/Programming_with_Java-from_Beginner_to_Master.pdf
+./program_code/.idea
+program_code/lib
+program_code/out
+program_code/CodeExamples.iml

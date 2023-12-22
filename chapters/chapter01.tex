@@ -1,0 +1,33 @@
+\chapter{Vectors and Linear Combinations} \label{ch:ch01}
+
+\fEn{“What is a vector?”} ဗက်တာဆိုတာ ဘာလဲ။ ဒီမေးခွန်းကို မဖြေခင်မှာ ကိန်းစစ် \fEn{(real numbers)} တွေနဲ့ ဖွဲ့စည်းထားတဲ့ ဗက်တာတွေရဲ့ ဥပမာတချို့ကို ကြည့်ရအောင်။ 
+
+\[
+\begin{bmatrix*}[r] 1\\ 3\\ \end{bmatrix*}, \qquad
+\begin{bmatrix*}[r] -1\\ 3\\ \end{bmatrix*}, \qquad
+\begin{bmatrix*}[r] 1.5\\ -3.2\\ \end{bmatrix*}
+\]
+
+\[
+\begin{bmatrix*}[r] 3\\ 3\\ 2\\\end{bmatrix*}, \qquad
+\begin{bmatrix*}[r] -1\\ 3\\ 1\\\end{bmatrix*}, \qquad
+\begin{bmatrix*}[r] 1.5\\ 1\\ \sqrt{2}\end{bmatrix*}
+\]
+ပထမသုံးခုဟာ \fEn{2-dimensional} ဗက်တာတွေပါ။ ဒုတိယသုံးခုကတော့ \fEn{3-dimensional} တွေဖြစ်ပါတယ်။ ဗက်တာတစ်ခုမှာ ကိန်းဂဏန်း တစ်လုံးနဲ့အထက် ပါဝင်နိုင်ပြီး လေးထောင့်ကွင်းထဲမှာ ကော်လံတစ်ခုအနေနဲ့ အထက်အောက်စီ၍ ရေးလေ့ရှိတယ်။ ပါဝင်တဲ့ ကိန်းတစ်ခုချင်းစီကို \fEnEmpBf{component} တွေလို့ခေါ်ပါတယ်။ ဘယ်လောက် \fEn{dimensional} ဗက်တာ ဖြစ်တယ်ဆိုတာကို ပါဝင်တဲ့ \fEnEmp{component} အရေအတွက်နဲ့ ခွဲခြားသတ်မှတ်တာ။ \fEn{Component} လေးခုပါရင် \fEn{4-dimensional,} \fEnEmpBf{n} ခုပါရင် \fEnEmpBf{n-dimensional} ပေါ့။ 
+
+\fEn{n-dimensional} ဗက်တာတွေ အားလုံးပါဝင်တဲ့ အစုကို \fEnEmpBf{Euclidean n-space} လို့ ခေါ်ပါတယ်။ ဥပမာအားဖြင့် \fEn{2-space} ဟာ \fEn{2-dimensional} ဗက်တာတွေ အားလုံးပါဝင်တဲ့ အစု၊ \fEn{3-space} ဟာ \fEn{3-dimensional} ဗက်တာတွေ အားလုံးပါဝင်တဲ့ အစု ဖြစ်ပါတယ်။ 
+
+\fEn{Real number} တွေ အနန္တရှိကြတယ်။ \fEn{Real number} တွေနဲ့ ဖွဲ့စည်းထားတဲ့ \fEn{2-dimensional} ဗက်တာတွေလည်း အနန္တရှိကြရမယ်။ \fEn{3-dimensional} တွေလည်း ထိုနည်းလည်းကောင်းပါပဲ။ ဒါကြောင့် \fEn{n-space} တစ်ခုမှာ အနန္တများပြားတဲ့ ဗက်တာတွေ ပါဝင်နေမှာဖြစ်တယ်။ 
+
+ဗက်တာတွေကို \(\vec{u}, \vec{v}, \vec{w}\) စတဲ့ အင်္ဂလိပ်အက္ခရာ အပေါ်မှာ မြှားလေးတင်ထားတဲ့ သင်္ကေတလေးတွေနဲ့ ကိုယ်စားပြုဖော်ပြလေ့ရှိတယ်။
+\[
+\vec{v} = \begin{bmatrix*}[r] 1\\ 2\\ \end{bmatrix*}, \qquad
+\vec{v} = \begin{bmatrix*}[r] -1\\ 3\\ 3\\\end{bmatrix*}, \qquad
+\vec{w} = \begin{bmatrix*}[r] 1.5\\ -3.2\\ \sqrt{2}\\ \sqrt{3}\\\end{bmatrix*}
+\]
+ဗက်တာ \fEn{component} တွေကိုတော့ အခုလို သင်္ကေတနဲ့ ဖော်ပြလေ့ရှိတယ်။ \fEn{Component} တွေဟာ သာမန် ဂဏန်းတွေပဲဖြစ်တဲ့အတွက် ၎င်းတို့ကို ကိုယ်စားပြုတဲ့အခါ မြှားမသုံးပါဘူး။
+\[
+\vec{v} = \begin{bmatrix*}[r] v_{1} \\ v_{2} \\ \end{bmatrix*}, \qquad
+\vec{w} = \begin{bmatrix*}[r] w_{1} \\ w_{2} \\ w_{3} \\ \end{bmatrix*}, \qquad
+\]
+\(\vec{v} = \begin{bsmallmatrix*}[r] 2 \\ 3\\ \end{bsmallmatrix*}\) ဖြစ်ရင် $v_{1}=2, v_{2}=3$ ဖြစ်တယ်။

@@ -1,0 +1,52 @@
+%!TeX program = XeLaTex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[10pt,twoside]{book}
+\XeTeXlinebreaklocale "my_MM"  %Myanmar line and character breaks
+\XeTeXinterwordspaceshaping=2
+
+\usepackage[
+    paperheight = 10.2in,
+    paperwidth = 7.4in,
+    right = 0.8in,
+    left = 1.45in,
+    top = 0.75in,
+    bottom = 0.9in,
+    heightrounded,
+    asymmetric,
+    %showframe
+]{geometry}
+\usepackage[parfill,indent=2em,skip=3pt plus 1pt]{parskip}
+\usepackage{bm}
+
+\usepackage{fontspec}
+
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage{siunitx}
+
+\usepackage{caption}
+\usepackage[labelformat=simple]{subcaption}
+
+\usepackage[textcolor=blue,
+    textsize=scriptsize,
+    textwidth=17.5mm,
+    color=red!25,
+    disable]{todonotes}
+
+\usepackage{booktabs}
+\usepackage{array}
+
+\usepackage{amsmath}
+\usepackage{mathtools}
+
+\input{preamble/font}
+\input{preamble/page_style}
+
+\pagestyle{fancy}
+
+\begin{document}
+\include{chapters/chapter01}
+\end{document}
