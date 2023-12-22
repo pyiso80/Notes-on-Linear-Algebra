@@ -1,6 +1,7 @@
-\chapter{Vectors and Linear Combinations} \label{ch:ch01}
+\chapter{Introduction to Vectors} \label{ch:ch01}
 
-\fEn{“What is a vector?”} ဗက်တာဆိုတာ ဘာလဲ။ ဒီမေးခွန်းကို မဖြေခင်မှာ ကိန်းစစ် \fEn{(real numbers)} တွေနဲ့ ဖွဲ့စည်းထားတဲ့ ဗက်တာတွေရဲ့ ဥပမာတချို့ကို ကြည့်ရအောင်။ 
+\section{ဗက်တာ (Vector)}
+\fEn{“What is a vector?”} ဗက်တာဆိုတာ ဘာလဲ။ ဒီမေးခွန်းကို မဖြေခင်မှာ ကိန်းစစ် \fEn{(real numbers)} တွေနဲ့ ဖွဲ့စည်းထားတဲ့ ဗက်တာ ဥပမာတချို့ကို ကြည့်ရအောင်။ 
 
 \[
 \begin{bmatrix*}[r] 1\\ 3\\ \end{bmatrix*}, \qquad
@@ -13,7 +14,7 @@
 \begin{bmatrix*}[r] -1\\ 3\\ 1\\\end{bmatrix*}, \qquad
 \begin{bmatrix*}[r] 1.5\\ 1\\ \sqrt{2}\end{bmatrix*}
 \]
-ပထမသုံးခုဟာ \fEn{2-dimensional} ဗက်တာတွေပါ။ ဒုတိယသုံးခုကတော့ \fEn{3-dimensional} တွေဖြစ်ပါတယ်။ ဗက်တာတစ်ခုမှာ ကိန်းဂဏန်း တစ်လုံးနဲ့အထက် ပါဝင်နိုင်ပြီး လေးထောင့်ကွင်းထဲမှာ ကော်လံတစ်ခုအနေနဲ့ အထက်အောက်စီ၍ ရေးလေ့ရှိတယ်။ ပါဝင်တဲ့ ကိန်းတစ်ခုချင်းစီကို \fEnEmpBf{component} တွေလို့ခေါ်ပါတယ်။ ဘယ်လောက် \fEn{dimensional} ဗက်တာ ဖြစ်တယ်ဆိုတာကို ပါဝင်တဲ့ \fEnEmp{component} အရေအတွက်နဲ့ ခွဲခြားသတ်မှတ်တာ။ \fEn{Component} လေးခုပါရင် \fEn{4-dimensional,} \fEnEmpBf{n} ခုပါရင် \fEnEmpBf{n-dimensional} ပေါ့။ 
+ပထမသုံးခုဟာ \fEn{2-dimensional} ဗက်တာတွေပါ။ ဒုတိယသုံးခုကတော့ \fEn{3-dimensional} တွေဖြစ်ပါတယ်။ ဗက်တာတစ်ခုမှာ ကိန်းဂဏန်း တစ်လုံးနဲ့အထက် ပါဝင်နိုင်ပြီး လေးထောင့်ကွင်းထဲမှာ ကော်လံတစ်ခုအနေနဲ့ အထက်အောက်စီ ရေးလေ့ရှိတယ်။ ပါဝင်တဲ့ ကိန်းတစ်ခုချင်းစီကို \fEnEmpBf{component} တွေလို့ခေါ်ပါတယ်။ ဘယ်လောက် \fEn{dimensional} ဗက်တာ ဖြစ်တယ်ဆိုတာကို ပါဝင်တဲ့ \fEnEmp{component} အရေအတွက်နဲ့ ခွဲခြားသတ်မှတ်တာ။ \fEn{Component} လေးခုပါရင် \fEn{4-dimensional,} \fEnEmpBf{n} ခုပါရင် \fEnEmpBf{n-dimensional} ပေါ့။ 
 
 \fEn{n-dimensional} ဗက်တာတွေ အားလုံးပါဝင်တဲ့ အစုကို \fEnEmpBf{Euclidean n-space} လို့ ခေါ်ပါတယ်။ ဥပမာအားဖြင့် \fEn{2-space} ဟာ \fEn{2-dimensional} ဗက်တာတွေ အားလုံးပါဝင်တဲ့ အစု၊ \fEn{3-space} ဟာ \fEn{3-dimensional} ဗက်တာတွေ အားလုံးပါဝင်တဲ့ အစု ဖြစ်ပါတယ်။ 
 
@@ -31,3 +32,42 @@
 \vec{w} = \begin{bmatrix*}[r] w_{1} \\ w_{2} \\ w_{3} \\ \end{bmatrix*}, \qquad
 \]
 \(\vec{v} = \begin{bsmallmatrix*}[r] 2 \\ 3\\ \end{bsmallmatrix*}\) ဖြစ်ရင် $v_{1}=2, v_{2}=3$ ဖြစ်တယ်။
+
+\section{ဗက်တာ ပေါင်းခြင်းနှင့် စကေလာဖြင့် မြှောက်ခြင်း}
+ဗက်တာ အော်ပရေးရှင်းနှစ်ခုရှိတယ်။ ပထမတစ်ခုက ဗက်တာ ပေါင်းခြင်း \fEn{(Vector Addition)}။  ဗက်တာအချင်းချင်း ပေါင်းတာကို အခုလို သတ်မှတ်ပါတယ်။ \fEn{Dimension} တူရပါမယ်။
+%
+\[
+\vec{u} = \begin{bmatrix*}[r] 4\\ 2\\ \end{bmatrix*}, \qquad
+\vec{v} = \begin{bmatrix*}[r] -1\\ 2\\ \end{bmatrix*}, \qquad
+\vec{u} + \vec{v} = \begin{bmatrix*}[r] 4\\ 2\\ \end{bmatrix*} +  \begin{bmatrix*}[r] -1\\ 2\\ \end{bmatrix*} = \begin{bmatrix*}[r] 3\\ 4\\ \end{bmatrix*}
+\]
+%
+လိုက်ဖက် \fEn{component} အချင်းချင်း ပေါင်းပေးရတာပါပဲ။ ပေါင်းလဒ်ဟာ ဗက်တာတစ်ခုပဲ ဖြစ်ပြီး \fEn{dimension} လည်း အတူတူပဲဖြစ်တယ်။ ဗက်တာတွေ နှုတ်လို့လည်းရတာပေါ့။ 
+%
+\[
+\vec{u} - \vec{v} = \begin{bmatrix*}[r] 4\\ 2\\ \end{bmatrix*} -  \begin{bmatrix*}[r] -1\\ 2\\ \end{bmatrix*} = \begin{bmatrix*}[r] 5\\ 0\\ \end{bmatrix*}
+\]
+%
+
+ဒုတိယ ဗက်တာ အော်ပရေးရှင်းကတော့ စကေလာဖြင့်မြှောက်ခြင်း \fEn{(Scalar Multiplication)} ပါ။ ဒီလိုသတ်မှတ်ပါတယ်။
+%
+\[
+\vec{u} = \begin{bmatrix*}[r] 4\\ 2\\ \end{bmatrix*},\qquad
+\vec{v} = \begin{bmatrix*}[r] -1\\ 2\\ \end{bmatrix*},\qquad
+2\vec{u}= 2\begin{bmatrix*}[r] 4\\ 2\\ \end{bmatrix*} = \begin{bmatrix*}[r] 8\\ 4\\ \end{bmatrix*}\qquad
+-2.5\vec{v}= -2.5 \begin{bmatrix*}[r] -1\\ 2\\ \end{bmatrix*} = \begin{bmatrix*}[r] 2.5\\ -5\\ \end{bmatrix*}
+\]
+%
+ဗက်တာတစ်ခုကို ရိုးရိုးဂဏန်းတစ်ခုနဲ့ မြှောက်တာပါပဲ။ \fEn{Component} တစ်ခုချင်းကို မြှောက်ပေးရတယ်။ ရလဒ်ဟာ ဗက်တာတစ်ခုဖြစ်ပြီး \fEn{dimension} မပြောင်းလဲဘူး။
+
+\section{Linear Combinations}
+အထက်မှာဖော်ပြခဲ့တဲ့ ဗက်တာအော်ပရေးရှင်း နှစ်ခုလုံး ပေါင်းစည်းထားတာကို \fEnEmpBf{Linear Combinations} လို့ခေါ်တာပါ။ ဥပမာ
+%
+\[
+2\vec{u} + -2.5\vec{v}= 2 \begin{bmatrix*}[r] 4\\ 2\\ \end{bmatrix*} 
+                        + -2.5 \begin{bmatrix*}[r] -1\\ 2\\ \end{bmatrix*} 
+                        = \begin{bmatrix*}[r] 8\\ 4\\ \end{bmatrix*} 
+                            + \begin{bmatrix*}[r] 2.5\\ -5\\ \end{bmatrix*}
+                        = \begin{bmatrix*}[r] 10.5\\ -1\\ \end{bmatrix*}
+\]
+%
