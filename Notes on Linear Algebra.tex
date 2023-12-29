@@ -42,6 +42,18 @@
 \usepackage{amsmath}
 \usepackage{mathtools}
 
+\usepackage{afterpage}
+\usepackage{adjustbox}
+
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+
 \input{preamble/font}
 \input{preamble/page_style}
 
